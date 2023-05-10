@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #5c5c5c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Noto Sans, sans-serif;
+    font-size: 12px;
+
+}
+
+.player-container {
+    height: 600px;
+    width: 350px;
+    background: rgba(241, 239, 239, 0.945);
+    border-radius: 5px;
+    box-shadow: 0 6px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.license-container {
+    position: relative;
+    top: 0;
+}
+
+.cc-by-container {
+    width: 80px;
+    position: relative;
+    top: 15px;
+    left: 255px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cc-by {
+    width: 100%;
+    border-radius: 2px;
+    /* box-shadow: 0 2px 40px 5px rgba(0, 0, 0, 0.3); */
+}
+
+.credit-container-open {
+    position: relative;
+    top: 11px;
+    left: 133px;
+    height: 80px;
+    width: 200px;
+    border-radius: 2px;
+    border: 1px solid black;
+    background: #fff;
+}
+
+.credit-container-closed {
+    display: none;
+}
+
+.music-container-with-cc-open {
+    position: relative;
+    top: 1px;
+}
+
+/* Change classlist when cc-by is open */
+.music-container-with-cc-closed {
+    position: relative;
+    top: 83px;
+}
+.img-container {
+    height: 220px;
+    width: 220px;
+    position: relative;
+    top: 10px;
+    left: 65px;
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+.song-container {
+    height: 250px;
+    width: 300px;
+    position: relative;
+    top: 15px;
+    left: 25px;
+}
+
+.title-container {
+    overflow: hidden;
+    margin: 0;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.long-title {
+    text-align: left;
+    width: 410px;
+
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from { -moz-transform: translateX(0%); }
+    to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(0%); }
+    to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(0%);
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+#album {
+    margin: 0;
+    text-align: center;
+}
+
+#artist {
+    margin-top: 0;
+    text-align: center;
+    font-size: 0.9rem;
+    /* font-weight: 900; */
+}
+/*  Progress bar*/
+.progress-container {
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 40px 0;
+    height: 4px;
+    width: 100%;
+}
+
+.progress {
+    background: #242323;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+.duration-wrapper {
+    position: relative;
+    top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Controls */
+.player-controls {
+    position: relative;
+    top: -15px;
+    left: 50px;
+    width: 200px;
+}
+
+.fa-solid {
+    font-size: 25px;
+    color: rgb(49, 49, 49);
+    margin-right: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fa-solid:hover {
+    filter: brightness(60%)
+}
+
+.main-button {
+    font-size: 40px;
+    position: relative;
+    top: 5px;
+}
+
+/* Media queries for screens less than 40 */
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #ced1d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Noto Sans, sans-serif;
+    font-size: 12px;
+
+}
+
+.player-container {
+    height: 500px;
+    width: 400px;
+    background: #ebe8e8;
+    border-radius: 20px;
+    box-shadow: 0 6px 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.img-container {
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: -50px;
+    left: 50px
+}
+
+.img-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.3);
+} */
+
+/* Media queries for screens less than 40 */
