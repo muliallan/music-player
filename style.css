@@ -42,10 +42,11 @@ body {
 #cc-by {
     width: 100%;
     border-radius: 2px;
-    /* box-shadow: 0 2px 40px 5px rgba(0, 0, 0, 0.3); */
 }
 
 .credit-container-open {
+    display: flex;
+    align-items: center;
     position: relative;
     top: 11px;
     left: 133px;
@@ -60,12 +61,17 @@ body {
     display: none;
 }
 
+#credit {
+    margin: 5px 0 0 0;
+    padding: 0 12px 5px 12px;
+    text-align:left;
+    font-size: 12px;
+}
 .music-container-with-cc-open {
     position: relative;
     top: 1px;
 }
 
-/* Change classlist when cc-by is open */
 .music-container-with-cc-closed {
     position: relative;
     top: 83px;
@@ -153,7 +159,6 @@ body {
     margin-top: 0;
     text-align: center;
     font-size: 0.9rem;
-    /* font-weight: 900; */
 }
 /*  Progress bar*/
 .progress-container {
@@ -205,51 +210,3 @@ body {
     position: relative;
     top: 5px;
 }
-
-/* Media queries for screens less than 40 */
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
-
-html {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    min-height: 100vh;
-    background: #ced1d3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Noto Sans, sans-serif;
-    font-size: 12px;
-
-}
-
-.player-container {
-    height: 500px;
-    width: 400px;
-    background: #ebe8e8;
-    border-radius: 20px;
-    box-shadow: 0 6px 30px 5px rgba(0, 0, 0, 0.3);
-}
-
-.img-container {
-    height: 300px;
-    width: 300px;
-    position: relative;
-    top: -50px;
-    left: 50px
-}
-
-.img-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    box-shadow: 0 3px 15px 5px rgba(0, 0, 0, 0.3);
-} */
-
-/* Media queries for screens less than 40 */

@@ -1,6 +1,3 @@
-
-// Progress bar
-
 const creditBtn = document.getElementById('cc-by-container')
 const creditContainer = document.getElementById('credit-container')
 const songName = document.getElementById('song-name')
