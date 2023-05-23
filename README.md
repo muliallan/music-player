@@ -2,9 +2,9 @@
 
 ---
 
-This is a lightweight [music player] (https://muliallan.github.io/music-player/) developed using vanilla JS.
+This is a lightweight [music player](https://muliallan.github.io/music-player/) developed using vanilla JS.
 
-Here is a link to the project: [Music player] (https://muliallan.github.io/music-player/)
+Here is a link to the project: [Music player](https://muliallan.github.io/music-player/)
 
 ## Technologies used
 
