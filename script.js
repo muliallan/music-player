@@ -8,14 +8,17 @@ const image = document.getElementById('image');
 const title = document.getElementById('title');
 const album = document.getElementById('album');
 const artist = document.getElementById('artist');
+const favoriteBtn = document.getElementById('favorite');
 const music = document.querySelector('audio');
 const progressContainer = document.getElementById('progress-container');
 const progress = document.getElementById('progress');
 const songCurrentTime = document.getElementById('current-time');
 const songDuration = document.getElementById('duration');
+const shuffleBtn = document.getElementById('shuffle');
 const prevBtn = document.getElementById('prev');
 const playBtn = document.getElementById('play');
 const nextBtn = document.getElementById('next');
+const repeatBtn = document.getElementById('repeat');
 
 
 
@@ -53,14 +56,24 @@ const songs = [
         artist: 'Kevin MacLead'
     },
     {
-        credit:'If by Peter Rudenko is licensed under a Creative Commons Attribution License.',
+        credit:'Counterclockwise by Peter Rudenko is licensed under a Creative Commons Attribution License.',
         artistLink: 'https://freemusicarchive.org/music/Peter_Rudenko/',
         ccLicense: 'Creative Commons Attribution License',
         ccLicenseLink: 'https://creativecommons.org/licenses/by/3.0/',
-        name: 'if',
-        displayName:'If',
+        name: 'counterclockwise',
+        displayName:'Counterclockwise',
         album: 'Album: 15 Etudes',
         artist: 'Peter Rudenko'
+    },
+    {
+        credit: 'Leaf Fall by Kristina Budzhiashvili is licensed under a Attribution 4.0 International License.',
+        artistLink: 'https://freemusicarchive.org/music/kristina-budzhiashvili/',
+        ccLicense: 'Attribution 4.0 International License',
+        ccLicenseLink: 'https://creativecommons.org/licenses/by/4.0/',
+        name: 'leaf-fall',
+        displayName:'Leaf Fall',
+        album: 'Album: Autumn',
+        artist: 'Kristina Budzhiashvili'
     },
     {
         credit: 'J. S. Bach: Prelude in C - BWV 846 by Kevin MacLeod is licensed under a Creative Commons Attribution License.',
@@ -71,10 +84,27 @@ const songs = [
         displayName:'J. S. Bach: Prelude in C - BWV 846',
         album: 'Album: Classical Sampler',
         artist: 'Kevin MacLead'
+    },
+    {
+        credit:'If by Peter Rudenko is licensed under a Creative Commons Attribution License.',
+        artistLink: 'https://freemusicarchive.org/music/Peter_Rudenko/',
+        ccLicense: 'Creative Commons Attribution License',
+        ccLicenseLink: 'https://creativecommons.org/licenses/by/3.0/',
+        name: 'if',
+        displayName:'If',
+        album: 'Album: 15 Etudes',
+        artist: 'Peter Rudenko'
     }
 ]
 // check if audio is playing
 let isPlaying = false;
+
+// shuffle, repeat & favorite functionalities
+// let isShuffled = false;
+// let isFavorite = false;
+// let isSongRepeated = false;
+// let isPlaylistRepeated = false;
+// let isCurrentSongRepeated = false
 
 const playSong = () => {
     isPlaying = true;

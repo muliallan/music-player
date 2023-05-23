@@ -33,8 +33,8 @@ body {
 .cc-by-container {
     width: 80px;
     position: relative;
-    top: 15px;
-    left: 255px;
+    top: 50px;
+    left: 235px;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -47,13 +47,16 @@ body {
 .credit-container-open {
     display: flex;
     align-items: center;
+    justify-content: center;
     position: relative;
-    top: 11px;
-    left: 133px;
-    height: 80px;
-    width: 200px;
+    top: 46px;
+    left: 35px;
+    height: 65px;
+    width: 280px;
     border-radius: 2px;
-    border: 1px solid black;
+    box-shadow: 0 6px 30px 5px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    /* border: 1px solid black; */
     background: #fff;
 }
 
@@ -62,26 +65,25 @@ body {
 }
 
 #credit {
-    margin: 5px 0 0 0;
-    padding: 0 12px 5px 12px;
-    text-align:left;
+    padding: 0 20px;
     font-size: 12px;
 }
+
 .music-container-with-cc-open {
     position: relative;
-    top: 1px;
+    top: -15px;
 }
 
 .music-container-with-cc-closed {
     position: relative;
-    top: 83px;
+    top: 50px;
 }
 .img-container {
-    height: 220px;
-    width: 220px;
+    height: 280px;
+    width: 280px;
     position: relative;
     top: 10px;
-    left: 65px;
+    left: 35px;
 }
 
 .img-container img {
@@ -94,26 +96,32 @@ body {
 
 .song-container {
     height: 250px;
-    width: 300px;
+    width: 280px;
     position: relative;
-    top: 15px;
-    left: 25px;
+    top: 12px;
+    left: 35px;
+
+}
+
+.song-info-container {
+    height: 64px;
 }
 
 .title-container {
     overflow: hidden;
-    margin: 0;
+    margin-top: 20px;
+    width: 246px;
 }
 
 .title {
     margin: 0;
-    text-align: center;
-    font-size: 1.5rem;
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 .long-title {
     text-align: left;
-    width: 410px;
+    width: 320px;
 
     /* animation properties */
     -moz-transform: translateX(100%);
@@ -152,20 +160,30 @@ body {
 
 #album {
     margin: 0;
-    text-align: center;
+    text-align: left;
+    font-size: 0.75rem;
 }
 
 #artist {
     margin-top: 0;
-    text-align: center;
+    text-align: left;
     font-size: 0.9rem;
+}
+
+#favorite {
+    font-size: 25px;
+    position: relative;
+    top: -75px;
+    left: 255px;
+    cursor: pointer;
+    /* background: red; */
 }
 /*  Progress bar*/
 .progress-container {
     background: #fff;
     border-radius: 5px;
     cursor: pointer;
-    margin: 40px 0;
+    margin-top: 20px;
     height: 4px;
     width: 100%;
 }
@@ -180,33 +198,57 @@ body {
 
 .duration-wrapper {
     position: relative;
-    top: -25px;
+    top: 0px;
     display: flex;
     justify-content: space-between;
 }
 
 /* Controls */
 .player-controls {
+    margin-top: 30px;
     position: relative;
     top: -15px;
-    left: 50px;
-    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 280px;
 }
 
+.prev-play-next {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+}
 .fa-solid {
     font-size: 25px;
-    color: rgb(49, 49, 49);
-    margin-right: 30px;
+    color: rgb(46, 46, 46);
     cursor: pointer;
     user-select: none;
 }
 
 .fa-solid:hover {
-    filter: brightness(60%)
+    filter: brightness(20%)
+}
+
+
+#shuffle {
+    color: #8f8f8f;
+}
+
+#repeat {
+    color: #8f8f8f;
+}
+
+#shuffle-active {
+    color: rgb(46, 46, 46)
+}
+
+#repeat-song-active {
+    color: rgb(46, 46, 46);
 }
 
 .main-button {
-    font-size: 40px;
+    font-size: 45px;
     position: relative;
-    top: 5px;
 }

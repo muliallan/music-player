@@ -17,12 +17,12 @@
         <!-- Creative commons license -->
         <div class="license-container">
             <div class="cc-by-container" id="cc-by-container">
-                <img id= "cc-by" src="images/by.svg" alt="Credit for using the song">
+                <img id="cc-by" src="images/by.svg" alt="Credit for using the song">
             </div>
             <div id="credit-container" class="credit-container-closed">
                 <p id="credit">
-                    <span id="song-name"></span> by 
-                    <span><a id="artist-link" href='' target="_blank"></a></span> is licensed under a 
+                    <span id="song-name"></span> by
+                    <span><a id="artist-link" href='' target="_blank"></a></span> is licensed under a
                     <span><a id="cc-link" href='' target="_blank"></a></span>.
                 </p>
             </div>
@@ -33,11 +33,14 @@
                 <img id="image" src="" alt="Album Art">
             </div>
             <div class="song-container">
-                <div class="title-container">
-                    <h2 id="title" class="title"></h2>
+                <div class="song-info-container">
+                    <div class="title-container">
+                        <h2 id="title" class="title"></h2>
+                    </div>
+                    <h3 id="album"></h3>
+                    <h3 id="artist"></h3>
+                    <i class="fa-regular fa-heart" id="favorite"></i>
                 </div>
-                <h3 id="album"></h3>
-                <h3 id="artist"></h3>
                 <audio></audio>
                 <!-- Progress bar -->
                 <div class="progress-container" id="progress-container">
@@ -49,13 +52,16 @@
                 </div>
                 <!-- Controls -->
                 <div class="player-controls">
-                    <i class="fa-solid fa-backward-step" id= "prev" title="Previous" style="margin-left:32px;"></i>
-                    <i class="fa-solid fa-circle-play main-button" id= "play" title="Play"></i>
-                    <i class="fa-solid fa-forward-step" id= "next" title="Next"></i>    
+                    <i class="fa-solid fa-shuffle" id="shuffle" title="Shuffle"></i>
+                    <div class="prev-play-next">
+                        <i class="fa-solid fa-backward-step" id="prev" title="Previous"></i>
+                        <i class="fa-solid fa-circle-play main-button" id="play" title="Play"></i>
+                        <i class="fa-solid fa-forward-step" id="next" title="Next"></i>
+                    </div>
+                    <i class="fa-solid fa-repeat" id="repeat" title="Repeat"></i>
                 </div>
             </div>
-        </div>
-        
+        </div>    
     </div>
     <!-- Script -->
     <script src="script.js"></script>
